@@ -72,7 +72,7 @@ GymMate is an application that helps people find workout buddies near them. User
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://user-images.githubusercontent.com/69356399/114112182-dbd50d80-98a9-11eb-9cc5-1d39487fb139.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
