@@ -79,7 +79,6 @@ GymMate is an application that helps people find workout buddies near them. User
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
 
 #### User Account
