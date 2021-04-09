@@ -101,6 +101,7 @@ GymMate is an application that helps people find workout buddies near them. User
 |objectId	|String	|unique id for user chat|
 |author	|Pointer |person sending the message|
 |text|String	|the message itself|
+|recipient|Pointer|person receiving the message|
 
 #### Posts
 |Property |Type	|Description|
