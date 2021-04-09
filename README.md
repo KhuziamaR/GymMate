@@ -80,7 +80,28 @@ GymMate is an application that helps people find workout buddies near them. User
 
 ## Schema 
 [This section will be completed in Unit 9]
+### Models
 
+#### User Account
+|Property |Type	|Description|
+|---------|-----|-----------|
+|username|String|unique username|
+|password|String|user selected password|
+|userProfilePicture|File|user selcted profile picture|
+|userGym|String|user selected gym|
+
+#### Friend
+|Property |Type	|Description|
+|---------|-----|-----------|
+|friendRequest|Pointer|pending requests|
+|friendAccept|Pointer|accpeted friends|
+
+#### Chat
+|Property |Type	|Description|
+|---------|-----|-----------|
+|objectId	|String	|unique id for user chat|
+|author	|Pointer |person sending the message|
+|text|String	|the message itself|
 
 #### Posts
 |Property |Type	|Description|
@@ -94,8 +115,7 @@ GymMate is an application that helps people find workout buddies near them. User
 |createdAt	|DateTime	|date when post is created (default field)|
 |updatedAt	|DateTime	|date when post is last updated (default field)|
 
-### Models
-[Add table of models]
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
