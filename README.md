@@ -117,6 +117,9 @@ GymMate is an application that helps people find workout buddies near them. User
 
 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- So far we have implemented the design of the Signin and Signup Page and will implement authentication by sending request to firebase to validate the Username and password that has been inputted to retrieve the users account.
+- Get Request for Authentication during Sign in. 
+- Post Request for registering a user and storing the users profile on firebase.
+- Update Request for updating user profile. 
+![Screen Shot 2021-04-15 at 10 50 57 PM](https://user-images.githubusercontent.com/69356399/114964608-122c0300-9e3d-11eb-8299-d263d0c757e1.png)
+
