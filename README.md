@@ -123,4 +123,6 @@ GymMate is an application that helps people find workout buddies near them. User
 - Update Request for updating user profile. 
 ![Screen Shot 2021-04-15 at 10 52 57 PM](https://user-images.githubusercontent.com/69356399/114964765-5919f880-9e3d-11eb-9a98-eeda3564150f.png)
 
+![Screen Shot 2021-04-15 at 10 54 52 PM](https://user-images.githubusercontent.com/69356399/114964955-b2822780-9e3d-11eb-94e3-3fd49f64adc1.png)
+
 
