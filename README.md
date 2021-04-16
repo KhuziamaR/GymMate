@@ -121,5 +121,6 @@ GymMate is an application that helps people find workout buddies near them. User
 - Get Request for Authentication during Sign in. 
 - Post Request for registering a user and storing the users profile on firebase.
 - Update Request for updating user profile. 
-![Screen Shot 2021-04-15 at 10 50 57 PM](https://user-images.githubusercontent.com/69356399/114964608-122c0300-9e3d-11eb-8299-d263d0c757e1.png)
+![Screen Shot 2021-04-15 at 10 52 57 PM](https://user-images.githubusercontent.com/69356399/114964765-5919f880-9e3d-11eb-9a98-eeda3564150f.png)
+
 
