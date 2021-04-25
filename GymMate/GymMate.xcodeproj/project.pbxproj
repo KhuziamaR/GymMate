@@ -14,6 +14,12 @@
 		917DD91E26291AC3006E4B03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917DD91C26291AC3006E4B03 /* LaunchScreen.storyboard */; };
 		917DD92826291D60006E4B03 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 917DD92726291D60006E4B03 /* Welcome.storyboard */; };
 		918D1CF32635BB8300C6B319 /* ViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1CF22635BB8300C6B319 /* ViewController+UI.swift */; };
+		918D1CF62635C98B00C6B319 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1CF52635C98B00C6B319 /* SignUpViewController.swift */; };
+		918D1CF92635CBF400C6B319 /* SignUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1CF82635CBF400C6B319 /* SignUpViewController+UI.swift */; };
+		918D1CFD2635D57E00C6B319 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1CFC2635D57E00C6B319 /* SignInViewController.swift */; };
+		918D1D002635D6B900C6B319 /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1CFF2635D6B900C6B319 /* SignInViewController+UI.swift */; };
+		918D1D032635DC6500C6B319 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1D022635DC6500C6B319 /* ForgotPasswordViewController.swift */; };
+		918D1D062635DCB400C6B319 /* ForgotPasswordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1D052635DCB400C6B319 /* ForgotPasswordViewController+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		917DD91F26291AC4006E4B03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		917DD92726291D60006E4B03 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		918D1CF22635BB8300C6B319 /* ViewController+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+UI.swift"; sourceTree = "<group>"; };
+		918D1CF52635C98B00C6B319 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		918D1CF82635CBF400C6B319 /* SignUpViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UI.swift"; sourceTree = "<group>"; };
+		918D1CFC2635D57E00C6B319 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		918D1CFF2635D6B900C6B319 /* SignInViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
+		918D1D022635DC6500C6B319 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		918D1D052635DCB400C6B319 /* ForgotPasswordViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPasswordViewController+UI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +70,20 @@
 		917DD91026291AC2006E4B03 /* GymMate */ = {
 			isa = PBXGroup;
 			children = (
-				918D1CF22635BB8300C6B319 /* ViewController+UI.swift */,
-				917DD91126291AC2006E4B03 /* AppDelegate.swift */,
-				917DD91326291AC2006E4B03 /* SceneDelegate.swift */,
-				917DD91526291AC2006E4B03 /* ViewController.swift */,
 				917DD91A26291AC3006E4B03 /* Assets.xcassets */,
-				917DD91C26291AC3006E4B03 /* LaunchScreen.storyboard */,
 				917DD91F26291AC4006E4B03 /* Info.plist */,
+				917DD91126291AC2006E4B03 /* AppDelegate.swift */,
+				917DD91C26291AC3006E4B03 /* LaunchScreen.storyboard */,
 				917DD92726291D60006E4B03 /* Welcome.storyboard */,
+				917DD91326291AC2006E4B03 /* SceneDelegate.swift */,
+				918D1CF22635BB8300C6B319 /* ViewController+UI.swift */,
+				917DD91526291AC2006E4B03 /* ViewController.swift */,
+				918D1CF52635C98B00C6B319 /* SignUpViewController.swift */,
+				918D1CF82635CBF400C6B319 /* SignUpViewController+UI.swift */,
+				918D1CFC2635D57E00C6B319 /* SignInViewController.swift */,
+				918D1CFF2635D6B900C6B319 /* SignInViewController+UI.swift */,
+				918D1D022635DC6500C6B319 /* ForgotPasswordViewController.swift */,
+				918D1D052635DCB400C6B319 /* ForgotPasswordViewController+UI.swift */,
 			);
 			path = GymMate;
 			sourceTree = "<group>";
@@ -140,10 +158,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				918D1D002635D6B900C6B319 /* SignInViewController+UI.swift in Sources */,
+				918D1CFD2635D57E00C6B319 /* SignInViewController.swift in Sources */,
+				918D1CF92635CBF400C6B319 /* SignUpViewController+UI.swift in Sources */,
 				917DD91626291AC2006E4B03 /* ViewController.swift in Sources */,
+				918D1D062635DCB400C6B319 /* ForgotPasswordViewController+UI.swift in Sources */,
 				917DD91226291AC2006E4B03 /* AppDelegate.swift in Sources */,
+				918D1D032635DC6500C6B319 /* ForgotPasswordViewController.swift in Sources */,
 				918D1CF32635BB8300C6B319 /* ViewController+UI.swift in Sources */,
 				917DD91426291AC2006E4B03 /* SceneDelegate.swift in Sources */,
+				918D1CF62635C98B00C6B319 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
