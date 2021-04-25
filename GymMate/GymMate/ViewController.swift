@@ -21,24 +21,21 @@ class ViewController: UIViewController {
        setupUI()
     }
     
+    
     func setupUI(){
+        setupHeaderTitle()
+        setupOrLabel()
+        setupTermsLabel()
+        setupFacebookButton()
+        setupGoogleButton()
+        setupCreateAccountButton()
+       
         
-        let title = "Create a new account"
-        let subTitle = "\n\n\n\n\nLorem ipsum fdf fdsf dfsdf fdsf."
         
-        let attributedText = NSMutableAttributedString(string: title,attributes: [NSAttributedString.Key.font : UIFont.init(name: "Didot", size: 28)!, NSAttributedString.Key.foregroundColor : UIColor.black
-        ])
-        let attributedSubText = NSMutableAttributedString(string: subTitle,attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor : UIColor(white: 0, alpha: 0.45)
-        ])
-        attributedText.append(attributedSubText)
         
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineSpacing = 10
         
-        attributedText.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
+       
         
-        titleLabel.numberOfLines = 0
-        titleLabel.attributedText = attributedText
     }
 
 }
