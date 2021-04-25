@@ -18,10 +18,23 @@ extension SignUpViewController {
       
         titleTextLabel.attributedText = attributedText
     }
+    
     func setupAvatar(){
         avatar.layer.cornerRadius = 40
         avatar.clipsToBounds = true
+        avatar.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(presentPicker))
+        avatar.addGestureRecognizer(tapGesture)
     }
+    
+    @objc func presentPicker(){
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        picker.allowsEditing = true
+        picker.delegate = self
+        self.present(picker,animated: true,completion: nil)
+    }
+    
     func setupFullNameTextField(){
         fullnameContainerView.layer.borderWidth = 1
         fullnameContainerView.layer.borderColor = UIColor(red: 210/255, green: 210/255, blue: 210/255, alpha: 1).cgColor
@@ -74,5 +87,19 @@ extension SignUpViewController {
         attributedText.append(attributedSubTermsTitle)
         signInButton.setAttributedTitle(attributedText, for: UIControl.State.normal)
     
+    }
+}
+
+extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let imageSelected = info[UIImagePickerController.InfoKey.editedImage] as?
+            UIImage{
+            avatar.image = imageSelected
+        }
+        if let imageOriginal = info[UIImagePickerController.InfoKey.editedImage] as?
+            UIImage{
+            avatar.image = imageOriginal
+        }
+        picker.dismiss(animated: true, completion: nil)
     }
 }

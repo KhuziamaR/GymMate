@@ -199,6 +199,9 @@
                                     <constraint firstAttribute="height" constant="50" id="VTL-ZS-dhf"/>
                                 </constraints>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signUpButtonDidTapped:" destination="9Xk-Oy-Jqy" eventType="touchUpInside" id="goh-8F-JpH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYY-Ay-YZ9">
                                 <rect key="frame" x="20" y="600" width="374" height="50"/>
@@ -266,7 +269,6 @@
         <!--Sign In View Controller-->
         <scene sceneID="ibW-yI-z8d">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qAb-Js-PAb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Cu1-Fr-CqB" customClass="SignInViewController" customModule="GymMate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AUK-Vf-HNg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -386,6 +388,7 @@
                         <outlet property="titleTextLabel" destination="Gyr-iS-dAf" id="e7W-NL-5ji"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qAb-Js-PAb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2939.130434782609" y="105.80357142857143"/>
         </scene>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E402B073649C7693FD4A42E /* Pods_GymMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EAEF71EC0B58801FE121E1 /* Pods_GymMate.framework */; };
 		917DD91226291AC2006E4B03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917DD91126291AC2006E4B03 /* AppDelegate.swift */; };
 		917DD91426291AC2006E4B03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917DD91326291AC2006E4B03 /* SceneDelegate.swift */; };
 		917DD91626291AC2006E4B03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917DD91526291AC2006E4B03 /* ViewController.swift */; };
@@ -20,9 +21,13 @@
 		918D1D002635D6B900C6B319 /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1CFF2635D6B900C6B319 /* SignInViewController+UI.swift */; };
 		918D1D032635DC6500C6B319 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1D022635DC6500C6B319 /* ForgotPasswordViewController.swift */; };
 		918D1D062635DCB400C6B319 /* ForgotPasswordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1D052635DCB400C6B319 /* ForgotPasswordViewController+UI.swift */; };
+		918D1D092635EB6B00C6B319 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 918D1D082635EB6B00C6B319 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		099B1652CCD85D7A68D91F16 /* Pods-GymMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymMate.release.xcconfig"; path = "Target Support Files/Pods-GymMate/Pods-GymMate.release.xcconfig"; sourceTree = "<group>"; };
+		17AFCDC13C5903FB30D1631E /* Pods-GymMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymMate.debug.xcconfig"; path = "Target Support Files/Pods-GymMate/Pods-GymMate.debug.xcconfig"; sourceTree = "<group>"; };
+		56EAEF71EC0B58801FE121E1 /* Pods_GymMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		917DD90E26291AC2006E4B03 /* GymMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917DD91126291AC2006E4B03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		917DD91326291AC2006E4B03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +43,7 @@
 		918D1CFF2635D6B900C6B319 /* SignInViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
 		918D1D022635DC6500C6B319 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		918D1D052635DCB400C6B319 /* ForgotPasswordViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPasswordViewController+UI.swift"; sourceTree = "<group>"; };
+		918D1D082635EB6B00C6B319 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E402B073649C7693FD4A42E /* Pods_GymMate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D5F1E74F17A4A68FF5752B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56EAEF71EC0B58801FE121E1 /* Pods_GymMate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		917DD90526291AC2006E4B03 = {
 			isa = PBXGroup;
 			children = (
 				917DD91026291AC2006E4B03 /* GymMate */,
 				917DD90F26291AC2006E4B03 /* Products */,
+				F0B462CA2B3DF1795E9C5298 /* Pods */,
+				6D5F1E74F17A4A68FF5752B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +92,7 @@
 				917DD91126291AC2006E4B03 /* AppDelegate.swift */,
 				917DD91C26291AC3006E4B03 /* LaunchScreen.storyboard */,
 				917DD92726291D60006E4B03 /* Welcome.storyboard */,
+				918D1D082635EB6B00C6B319 /* GoogleService-Info.plist */,
 				917DD91326291AC2006E4B03 /* SceneDelegate.swift */,
 				918D1CF22635BB8300C6B319 /* ViewController+UI.swift */,
 				917DD91526291AC2006E4B03 /* ViewController.swift */,
@@ -88,6 +106,16 @@
 			path = GymMate;
 			sourceTree = "<group>";
 		};
+		F0B462CA2B3DF1795E9C5298 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17AFCDC13C5903FB30D1631E /* Pods-GymMate.debug.xcconfig */,
+				099B1652CCD85D7A68D91F16 /* Pods-GymMate.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 917DD92226291AC4006E4B03 /* Build configuration list for PBXNativeTarget "GymMate" */;
 			buildPhases = (
+				CA3EEEB10F85849FD7D93E1C /* [CP] Check Pods Manifest.lock */,
 				917DD90A26291AC2006E4B03 /* Sources */,
 				917DD90B26291AC2006E4B03 /* Frameworks */,
 				917DD90C26291AC2006E4B03 /* Resources */,
+				1C64E5FA85F9D95A999B0C90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,12 +176,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				917DD91E26291AC3006E4B03 /* LaunchScreen.storyboard in Resources */,
+				918D1D092635EB6B00C6B319 /* GoogleService-Info.plist in Resources */,
 				917DD91B26291AC3006E4B03 /* Assets.xcassets in Resources */,
 				917DD92826291D60006E4B03 /* Welcome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C64E5FA85F9D95A999B0C90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GymMate/Pods-GymMate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GymMate/Pods-GymMate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GymMate/Pods-GymMate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA3EEEB10F85849FD7D93E1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GymMate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		917DD90A26291AC2006E4B03 /* Sources */ = {
@@ -303,6 +376,7 @@
 		};
 		917DD92326291AC4006E4B03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17AFCDC13C5903FB30D1631E /* Pods-GymMate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +395,7 @@
 		};
 		917DD92426291AC4006E4B03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 099B1652CCD85D7A68D91F16 /* Pods-GymMate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
