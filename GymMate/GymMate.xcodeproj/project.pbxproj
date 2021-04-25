@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,8 @@
 		918D1D032635DC6500C6B319 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1D022635DC6500C6B319 /* ForgotPasswordViewController.swift */; };
 		918D1D062635DCB400C6B319 /* ForgotPasswordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1D052635DCB400C6B319 /* ForgotPasswordViewController+UI.swift */; };
 		918D1D092635EB6B00C6B319 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 918D1D082635EB6B00C6B319 /* GoogleService-Info.plist */; };
+		918D1D4026360D8300C6B319 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1D3F26360D8300C6B319 /* Api.swift */; };
+		918D1D4326360DC200C6B319 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1D4226360DC200C6B319 /* UserApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		918D1D022635DC6500C6B319 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		918D1D052635DCB400C6B319 /* ForgotPasswordViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForgotPasswordViewController+UI.swift"; sourceTree = "<group>"; };
 		918D1D082635EB6B00C6B319 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		918D1D3F26360D8300C6B319 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		918D1D4226360DC200C6B319 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				918D1CFF2635D6B900C6B319 /* SignInViewController+UI.swift */,
 				918D1D022635DC6500C6B319 /* ForgotPasswordViewController.swift */,
 				918D1D052635DCB400C6B319 /* ForgotPasswordViewController+UI.swift */,
+				918D1D3F26360D8300C6B319 /* Api.swift */,
+				918D1D4226360DC200C6B319 /* UserApi.swift */,
 			);
 			path = GymMate;
 			sourceTree = "<group>";
@@ -112,7 +118,6 @@
 				17AFCDC13C5903FB30D1631E /* Pods-GymMate.debug.xcconfig */,
 				099B1652CCD85D7A68D91F16 /* Pods-GymMate.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -236,9 +241,11 @@
 				918D1CF92635CBF400C6B319 /* SignUpViewController+UI.swift in Sources */,
 				917DD91626291AC2006E4B03 /* ViewController.swift in Sources */,
 				918D1D062635DCB400C6B319 /* ForgotPasswordViewController+UI.swift in Sources */,
+				918D1D4026360D8300C6B319 /* Api.swift in Sources */,
 				917DD91226291AC2006E4B03 /* AppDelegate.swift in Sources */,
 				918D1D032635DC6500C6B319 /* ForgotPasswordViewController.swift in Sources */,
 				918D1CF32635BB8300C6B319 /* ViewController+UI.swift in Sources */,
+				918D1D4326360DC200C6B319 /* UserApi.swift in Sources */,
 				917DD91426291AC2006E4B03 /* SceneDelegate.swift in Sources */,
 				918D1CF62635C98B00C6B319 /* SignUpViewController.swift in Sources */,
 			);
