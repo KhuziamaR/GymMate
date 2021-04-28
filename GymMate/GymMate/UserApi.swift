@@ -12,6 +12,18 @@ import ProgressHUD
 import FirebaseStorage
 import FirebaseDatabase
 class UserApi{
+    
+    func signIn(email: String, password: String, onSuccess:@escaping() -> Void, onError: @escaping( _ errorMessage: String) -> Void){
+        Auth.auth().signIn(withEmail: email, password: password) { (authData, error) in
+            if error != nil{
+                onError(error!.localizedDescription)
+                return
+            }
+            print(authData?.user.uid)
+            onSuccess()
+        }
+    }
+    
     func signUp(withUsername username: String, email: String, password: String, image:UIImage?, onSuccess:@escaping() -> Void, onError: @escaping( _ errorMessage: String) -> Void){
         
         Auth.auth().createUser(withEmail: email, password: password)
@@ -21,51 +33,34 @@ class UserApi{
                 return
             }
             if let authData = authDataResult {
-                print(authData.user.email)
-                var dict: Dictionary<String,Any> = [
-                    "uid": authData.user.uid,
-                    "email":authData.user.email,
-                    "username": username,
-                    "profileImageUrl": "",
-                    "status": "Welcome to GymMate"
+                let dict: Dictionary<String,Any> = [
+                    UID: authData.user.uid,
+                    EMAIL: authData.user.email,
+                    USERNAME: username,
+                    PROFILE_IMAGE_URL: "",
+                    STATUS: "Welcome to GymMate"
                 ]
                 guard let imageSelected = image else {
-                    ProgressHUD.showError("Please choose your profile image")
+                    ProgressHUD.showError(ERROR_EMPTY_PHOTO)
                     return
                 }
                 
                 guard let imageData = imageSelected.jpegData(compressionQuality: 0.4) else {
                     return
                 }
-                
-                let storageRef = Storage.storage().reference(forURL: "gs://gymmate-e5498.appspot.com")
-                let storageProfileRef = storageRef.child("profile").child(authData.user.uid)
+
+               
+                let storageProfile = Ref().storageSpecificProfile(uid: authData.user.uid)
                 
                 let metadata = StorageMetadata()
                 metadata.contentType = "image/jpg"
                 
-                storageProfileRef.putData(imageData, metadata: metadata, completion: {(storageMetadata,error) in
-                    if error != nil {
-                        print(error?.localizedDescription)
-                        return
-                    }
-                    storageProfileRef.downloadURL(completion: {(url,error) in
-                        if let metaImageUrl = url?.absoluteString {
-                            dict["profileImageUrl"] = metaImageUrl
-                            Database.database().reference().child("users").child(authData.user.uid).updateChildValues(dict,withCompletionBlock: {
-                                (error,ref) in
-                                if error == nil {
-                                    onSuccess()
-                                } else {
-                                    onError(error!.localizedDescription)
-                                }
-                            })
-                        }
-                    })
-                })
-                
-                
-               
+                StorageService.savePhoto(username: username, uid: authData.user.uid, data: imageData, metadata: metadata, storageProfileRef: storageProfile, dict: dict) {
+                    onSuccess()
+                } onError: { (errorMessage) in
+                    onError(errorMessage)
+                }
+
             }
             
         }

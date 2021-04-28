@@ -234,7 +234,7 @@
                             <constraint firstItem="k96-MH-qt3" firstAttribute="top" secondItem="xPp-wI-ZiO" secondAttribute="bottom" constant="30" id="K5J-J5-sth"/>
                             <constraint firstItem="lwE-ZP-cXD" firstAttribute="top" secondItem="29m-cU-cNu" secondAttribute="bottom" constant="40" id="R8J-GU-jb9"/>
                             <constraint firstItem="Ycr-Ik-AiR" firstAttribute="trailing" secondItem="wYY-Ay-YZ9" secondAttribute="trailing" constant="20" id="T8d-uY-zyu"/>
-                            <constraint firstItem="2z7-En-JaC" firstAttribute="top" secondItem="k96-MH-qt3" secondAttribute="bottom" constant="30" id="Wt1-0M-8VT"/>
+                            <constraint firstItem="2z7-En-JaC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="k96-MH-qt3" secondAttribute="bottom" constant="30" id="Wt1-0M-8VT"/>
                             <constraint firstItem="2z7-En-JaC" firstAttribute="top" secondItem="k96-MH-qt3" secondAttribute="bottom" constant="40" id="XDF-gt-snf"/>
                             <constraint firstItem="GKF-wh-Mny" firstAttribute="top" secondItem="2z7-En-JaC" secondAttribute="bottom" constant="30" id="YHD-lr-pdv"/>
                             <constraint firstItem="Ycr-Ik-AiR" firstAttribute="trailing" secondItem="GKF-wh-Mny" secondAttribute="trailing" constant="20" id="aYG-Or-LI1"/>
@@ -324,6 +324,9 @@
                                     <constraint firstAttribute="height" constant="50" id="xU1-rZ-And"/>
                                 </constraints>
                                 <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="signInButtonDidTapped:" destination="Cu1-Fr-CqB" eventType="touchUpInside" id="gFC-zg-reK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3o-JD-tY3">
                                 <rect key="frame" x="20" y="405" width="374" height="50"/>
