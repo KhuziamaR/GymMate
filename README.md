@@ -25,11 +25,11 @@ GymMate is an application that helps people find workout buddies near them. User
 
 **Required Must-have Stories**
 
-* User can resister a new account
-* User can Log On
-* User can find Gym Buddies
-* User can add Gym Buddies as Friends
-* User can chat with friends
+- [x] User can resister a new account
+- [x] User can Log On
+- []User can find Gym Buddies
+- [] User can add Gym Buddies as Friends
+- [] User can chat with friends
  
 
 **Optional Nice-to-have Stories**
