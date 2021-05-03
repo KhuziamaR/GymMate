@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,13 +20,38 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        // add these lines
+            let storyboard = UIStoryboard(name: "Welcome", bundle: nil)
+            
+            // if user is logged in before
+        if Auth.auth().currentUser?.uid != nil {
+                // instantiate the main tab bar controller and set it as root view controller
+                // using the storyboard identifier we set earlier
+                let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
+                window?.rootViewController = mainTabBarController
+            } else {
+                // if user isn't logged in
+                // instantiate the navigation controller and set it as root view controller
+                // using the storyboard identifier we set earlier
+                let loginNavController = storyboard.instantiateViewController(identifier: "LoginNavigationController")
+                window?.rootViewController = loginNavController
+            }
 //        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
 //        window?.windowScene = windowScene
 //                window?.rootViewController = ViewController()
 //                window?.makeKeyAndVisible()
         
     }
-
+    
+    func changeRootViewController(_ vc: UIViewController, animated: Bool = true) {
+        guard let window = self.window else {
+            return
+        }
+        
+        // change the root view controller to your specific view controller
+        window.rootViewController = vc
+    }
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

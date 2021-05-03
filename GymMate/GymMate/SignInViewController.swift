@@ -37,6 +37,13 @@ class SignInViewController: UIViewController {
         self.validateFields()
         self.signIn( onSuccess: {
             // switch view on success
+            let storyboard = UIStoryboard(name: "Welcome", bundle: nil)
+               let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
+               
+               // This is to get the SceneDelegate object from your view controller
+               // then call the change root view controller function to change to main tab bar
+               (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
+
         }) { (errorMessage) in
             ProgressHUD.showError(errorMessage)
         }

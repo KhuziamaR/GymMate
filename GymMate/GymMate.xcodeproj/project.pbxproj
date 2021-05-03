@@ -26,6 +26,8 @@
 		918D1D092635EB6B00C6B319 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 918D1D082635EB6B00C6B319 /* GoogleService-Info.plist */; };
 		918D1D4026360D8300C6B319 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1D3F26360D8300C6B319 /* Api.swift */; };
 		918D1D4326360DC200C6B319 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918D1D4226360DC200C6B319 /* UserApi.swift */; };
+		91DA2BDC264067FE0052F21D /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DA2BDB264067FE0052F21D /* MyProfileViewController.swift */; };
+		91DA2BDF26406AD40052F21D /* MyProfileViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DA2BDE26406AD40052F21D /* MyProfileViewController+UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		918D1D082635EB6B00C6B319 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		918D1D3F26360D8300C6B319 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		918D1D4226360DC200C6B319 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		91DA2BDB264067FE0052F21D /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		91DA2BDE26406AD40052F21D /* MyProfileViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyProfileViewController+UI.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				918D1D3F26360D8300C6B319 /* Api.swift */,
 				918D1D4226360DC200C6B319 /* UserApi.swift */,
 				91471BAB2639018400392896 /* Ref.swift */,
+				91DA2BDB264067FE0052F21D /* MyProfileViewController.swift */,
+				91DA2BDE26406AD40052F21D /* MyProfileViewController+UI.swift */,
 			);
 			path = GymMate;
 			sourceTree = "<group>";
@@ -242,9 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91DA2BDC264067FE0052F21D /* MyProfileViewController.swift in Sources */,
 				918D1D002635D6B900C6B319 /* SignInViewController+UI.swift in Sources */,
 				91471BAC2639018400392896 /* Ref.swift in Sources */,
 				918D1CFD2635D57E00C6B319 /* SignInViewController.swift in Sources */,
+				91DA2BDF26406AD40052F21D /* MyProfileViewController+UI.swift in Sources */,
 				918D1CF92635CBF400C6B319 /* SignUpViewController+UI.swift in Sources */,
 				917DD91626291AC2006E4B03 /* ViewController.swift in Sources */,
 				918D1D062635DCB400C6B319 /* ForgotPasswordViewController+UI.swift in Sources */,
