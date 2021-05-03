@@ -2,13 +2,19 @@
 
 ## Table of Contents
 1. [Overview](#Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
-2. [Schema](#Schema)
+2. [Video Walkthrough](#video)
+3. [Product Spec](#Product-Spec)
+4. [Wireframes](#Wireframes)
+5. [Schema](#Schema)
 
 ## Overview
 ### Description
 GymMate is an application that helps people find workout buddies near them. Users can anonymously swipe through other users profiles and send friend requests. Users can chat with their friends and motivate each other by challenging each other at the gym.    
+
+## video
+### Video Walkthrough
+http://g.recordit.co/ud8h12hb5h.gif
+
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
@@ -25,11 +31,11 @@ GymMate is an application that helps people find workout buddies near them. User
 
 **Required Must-have Stories**
 
-* User can resister a new account
-* User can Log On
-* User can find Gym Buddies
-* User can add Gym Buddies as Friends
-* User can chat with friends
+- [x] User can resister a new account
+- [x] User can Log On
+- []User can find Gym Buddies
+- [] User can add Gym Buddies as Friends
+- [] User can chat with friends
  
 
 **Optional Nice-to-have Stories**
