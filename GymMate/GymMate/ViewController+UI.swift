@@ -10,12 +10,12 @@ import UIKit
 extension ViewController {
     
     func setupHeaderTitle(){
-        let title = "Create a new account"
-        let subTitle = "\n\n\n\n\nLorem ipsum fdf fdsf dfsdf fdsf."
+        let title = "Welcome to GymMate"
+        let subTitle = "\n\n\n\n\nCreate a new Account"
         
         let attributedText = NSMutableAttributedString(string: title,attributes: [NSAttributedString.Key.font : UIFont.init(name: "Didot", size: 28)!, NSAttributedString.Key.foregroundColor : UIColor.black
         ])
-        let attributedSubText = NSMutableAttributedString(string: subTitle,attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor : UIColor(white: 0, alpha: 0.45)
+        let attributedSubText = NSMutableAttributedString(string: subTitle,attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18), NSAttributedString.Key.foregroundColor : UIColor(white: 0, alpha: 0.45)
         ])
         attributedText.append(attributedSubText)
         
@@ -75,6 +75,10 @@ extension ViewController {
         createAccountButton.backgroundColor = UIColor.black
         createAccountButton.layer.cornerRadius = 5
         createAccountButton.clipsToBounds = true
+    }
+    
+    func setupBackgroundColor(){
+//        view.backgroundColor = UIColor(red: 131/255, green: 197/255, blue: 190/255, alpha: 1)
     }
 
 }

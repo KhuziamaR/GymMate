@@ -18,11 +18,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
        setupUI()
     }
     
     
     func setupUI(){
+        setupBackgroundColor()
         setupHeaderTitle()
         setupOrLabel()
         setupTermsLabel()
