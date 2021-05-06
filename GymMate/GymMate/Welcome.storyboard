@@ -513,7 +513,7 @@
         <!--Home-->
         <scene sceneID="BzJ-Za-eG2">
             <objects>
-                <viewController id="4Jk-J3-fzO" sceneMemberID="viewController">
+                <viewController id="4Jk-J3-fzO" customClass="HomeViewController" customModule="GymMate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5I0-c8-mha" colorLabel="IBBuiltInLabel-Yellow">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -607,24 +607,48 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3D4-YV-2Au"/>
                                 </constraints>
-                                <state key="normal" title="Log Out"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="logoutButtonDidTapped:" destination="T5Y-68-o8Y" eventType="touchUpInside" id="TZk-HB-GbV"/>
                                     <action selector="signUpButtonDidTapped:" destination="9Xk-Oy-Jqy" eventType="touchUpInside" id="JQg-tE-MrK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBV-bc-8A7">
+                                <rect key="frame" x="30" y="228" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ohx-Sg-ub0">
+                                <rect key="frame" x="167" y="118" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.14505758169999999" green="0.6789264049" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="71E-gE-Jfn"/>
+                                    <constraint firstAttribute="height" constant="80" id="o9R-dO-BB5"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ck5-hK-Vzg"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="RBV-bc-8A7" firstAttribute="top" secondItem="Ohx-Sg-ub0" secondAttribute="bottom" constant="30" id="0ha-oL-mIp"/>
                             <constraint firstItem="Ck5-hK-Vzg" firstAttribute="trailing" secondItem="a8m-mR-wZ8" secondAttribute="trailing" constant="20" id="7Da-Xh-4AG"/>
+                            <constraint firstItem="Ck5-hK-Vzg" firstAttribute="trailing" secondItem="Ohx-Sg-ub0" secondAttribute="trailing" constant="167" id="DST-Ge-Kks"/>
                             <constraint firstItem="a8m-mR-wZ8" firstAttribute="leading" secondItem="Ck5-hK-Vzg" secondAttribute="leading" constant="20" id="E5i-sk-uTe"/>
                             <constraint firstItem="Ck5-hK-Vzg" firstAttribute="bottom" secondItem="a8m-mR-wZ8" secondAttribute="bottom" constant="40" id="M3K-Db-VLe"/>
+                            <constraint firstItem="Ohx-Sg-ub0" firstAttribute="top" secondItem="Ck5-hK-Vzg" secondAttribute="top" constant="30" id="PkQ-JR-8KO"/>
+                            <constraint firstItem="Ohx-Sg-ub0" firstAttribute="leading" secondItem="Ck5-hK-Vzg" secondAttribute="leading" constant="167" id="VeK-LT-K6e"/>
+                            <constraint firstItem="RBV-bc-8A7" firstAttribute="leading" secondItem="Ck5-hK-Vzg" secondAttribute="leading" constant="30" id="hk3-T7-gpm"/>
+                            <constraint firstItem="Ck5-hK-Vzg" firstAttribute="trailing" secondItem="RBV-bc-8A7" secondAttribute="trailing" constant="30" id="rwu-gi-6wi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Profile" id="fhi-QN-osf"/>
                     <connections>
+                        <outlet property="image" destination="Ohx-Sg-ub0" id="Luo-G0-oZn"/>
                         <outlet property="logoutButton" destination="a8m-mR-wZ8" id="G04-JX-8dO"/>
+                        <outlet property="usernameLabel" destination="RBV-bc-8A7" id="LO1-Zy-ZR0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qn-Jd-Srb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -636,9 +660,6 @@
         <image name="icons8-delete-25 (1)" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -11,7 +11,7 @@ import FirebaseAuth
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -30,6 +30,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 // using the storyboard identifier we set earlier
                 let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
                 window?.rootViewController = mainTabBarController
+                setupNavigationTitle()
+                
             } else {
                 // if user isn't logged in
                 // instantiate the navigation controller and set it as root view controller
@@ -85,7 +87,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
+    func setupNavigationTitle(){
+        let attrs = [
+            NSAttributedString.Key.foregroundColor: UIColor.black,
+            NSAttributedString.Key.font: UIFont(name: "Didot-Bold", size: 18)!
+        ]
 
+        UINavigationBar.appearance().titleTextAttributes = attrs
+    }
 
 }
 
