@@ -13,7 +13,8 @@ GymMate is an application that helps people find workout buddies near them. User
 
 ## video
 ### Video Walkthrough
-http://g.recordit.co/ud8h12hb5h.gif
+<img src='http://g.recordit.co/U1PNIvmJt1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
 
 ### App Evaluation
