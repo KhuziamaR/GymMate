@@ -34,7 +34,9 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let image = info[.editedImage]
+        let image = info[.editedImage] as! UIImage
+        
+        imageView.image = image
         
         dismiss(animated: true, completion: nil)
     }
