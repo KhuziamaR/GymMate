@@ -30,6 +30,7 @@
 		91DA2BDF26406AD40052F21D /* MyProfileViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DA2BDE26406AD40052F21D /* MyProfileViewController+UI.swift */; };
 		91DD384926446FAC00FE6A9E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DD384826446FAC00FE6A9E /* HomeViewController.swift */; };
 		91DD384C2644702200FE6A9E /* HomeViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DD384B2644702200FE6A9E /* HomeViewController+UI.swift */; };
+		9C73B5BA264D66C300459956 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C73B5B9264D66C300459956 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		91DA2BDE26406AD40052F21D /* MyProfileViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyProfileViewController+UI.swift"; sourceTree = "<group>"; };
 		91DD384826446FAC00FE6A9E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		91DD384B2644702200FE6A9E /* HomeViewController+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UI.swift"; sourceTree = "<group>"; };
+		9C73B5B9264D66C300459956 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				917DD91126291AC2006E4B03 /* AppDelegate.swift */,
 				917DD91C26291AC3006E4B03 /* LaunchScreen.storyboard */,
 				917DD92726291D60006E4B03 /* Welcome.storyboard */,
+				9C73B5B9264D66C300459956 /* CameraViewController.swift */,
 				918D1D082635EB6B00C6B319 /* GoogleService-Info.plist */,
 				917DD91326291AC2006E4B03 /* SceneDelegate.swift */,
 				91471BA82638FD5D00392896 /* StorageService.swift */,
@@ -270,6 +273,7 @@
 				918D1D032635DC6500C6B319 /* ForgotPasswordViewController.swift in Sources */,
 				918D1CF32635BB8300C6B319 /* ViewController+UI.swift in Sources */,
 				918D1D4326360DC200C6B319 /* UserApi.swift in Sources */,
+				9C73B5BA264D66C300459956 /* CameraViewController.swift in Sources */,
 				917DD91426291AC2006E4B03 /* SceneDelegate.swift in Sources */,
 				918D1CF62635C98B00C6B319 /* SignUpViewController.swift in Sources */,
 			);
