@@ -12,6 +12,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var caption: UITextField!
     @IBAction func PostSubmit(_ sender: Any) {
+        
     }
     
     override func viewDidLoad() {
