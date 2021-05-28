@@ -28,13 +28,17 @@ extension MyProfileViewController{
         image.clipsToBounds = true
         
     }
+    func setupAppinfo(){
+        appinfoLabel.font = UIFont(name:"Didot", size: 24.0)
+        appinfoLabel.text = "Welcome to Gymmate, get started by posting a gymmate request and finding other users near you!"
+    }
     func setupUserNameLabel(){
         let user = Auth.auth().currentUser
         let username = user?.displayName
         
         
         
-        let attributedText = NSMutableAttributedString(string: username!,attributes: [NSAttributedString.Key.font : UIFont.init(name: "Didot", size: 24)!, NSAttributedString.Key.foregroundColor : UIColor.black
+        let attributedText = NSMutableAttributedString(string: username!,attributes: [NSAttributedString.Key.font : UIFont.init(name: "Didot-Bold", size: 24)!, NSAttributedString.Key.foregroundColor : UIColor.black
         ])
         usernameLabel.attributedText = attributedText
         usernameLabel.sizeToFit()

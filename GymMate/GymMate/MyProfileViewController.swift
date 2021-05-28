@@ -9,6 +9,7 @@ import UIKit
 import FirebaseAuth
 class MyProfileViewController: UIViewController {
 
+    @IBOutlet weak var appinfoLabel: UILabel!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var logoutButton: UIButton!
@@ -22,10 +23,12 @@ class MyProfileViewController: UIViewController {
 //        setupAvatar()
 //        setupFullNameTextField()
 //        setupEmailTextField()
+        setupAppinfo()
         setupImage()
         setupUserNameLabel()
         setupLogoutButton()
     }
+    
     
     @IBAction func logoutButtonDidTapped(_ sender: Any) {
         let firebaseAuth = Auth.auth()

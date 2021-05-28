@@ -49,8 +49,9 @@ extension HomeViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell", for: indexPath) as! PostTableViewCell
 //        cell.textLabel?.text = posts[indexPath.row].caption
         cell.captionTextView.text = posts[indexPath.row].caption
+        cell.captionTextView.font = UIFont(name:"Didot", size: 16.0)
         cell.usernameTextView.text = posts[indexPath.row].username
-        
+        cell.usernameTextView.font = UIFont(name:"Didot-Bold", size: 16.0)
         let imageUrl = posts[indexPath.row].photoUrl
         let fileUrl = URL(string: imageUrl)
         let imageData = try! Data(contentsOf: fileUrl!)

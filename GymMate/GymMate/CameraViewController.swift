@@ -25,11 +25,32 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     var selectedImage: UIImage?
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         photo.isUserInteractionEnabled = true
         self.ref = Database.database().reference()
         // Do any additional setup after loading the view.
     }
+    func setupUI(){
+        setupCaption()
+        setupShareButton()
+        setupzipcode()
+    }
     
+    func setupCaption(){
+        captionTextView.placeholder = "Enter a caption here"
+    }
+    func setupShareButton(){
+        shareButton.setTitle("Sign Up", for: UIControl.State.normal)
+        shareButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        shareButton.backgroundColor = UIColor.black
+        shareButton.layer.cornerRadius = 5
+        shareButton.clipsToBounds = true
+        shareButton.setTitleColor(.white, for: UIControl.State.normal)
+    }
+    func setupzipcode(){
+        zipcode.placeholder = "Enter your zipcode"
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         handlePost()
