@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244BF6DF26607B200037AE1A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BF6DE26607B200037AE1A /* Config.swift */; };
 		5E402B073649C7693FD4A42E /* Pods_GymMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56EAEF71EC0B58801FE121E1 /* Pods_GymMate.framework */; };
 		91471BA92638FD5D00392896 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91471BA82638FD5D00392896 /* StorageService.swift */; };
 		91471BAC2639018400392896 /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91471BAB2639018400392896 /* Ref.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		099B1652CCD85D7A68D91F16 /* Pods-GymMate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymMate.release.xcconfig"; path = "Target Support Files/Pods-GymMate/Pods-GymMate.release.xcconfig"; sourceTree = "<group>"; };
 		17AFCDC13C5903FB30D1631E /* Pods-GymMate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymMate.debug.xcconfig"; path = "Target Support Files/Pods-GymMate/Pods-GymMate.debug.xcconfig"; sourceTree = "<group>"; };
+		244BF6DE26607B200037AE1A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		56EAEF71EC0B58801FE121E1 /* Pods_GymMate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymMate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91471BA82638FD5D00392896 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		91471BAB2639018400392896 /* Ref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
@@ -117,11 +119,11 @@
 				918D1CF22635BB8300C6B319 /* ViewController+UI.swift */,
 				917DD91526291AC2006E4B03 /* ViewController.swift */,
 				918D1CF52635C98B00C6B319 /* SignUpViewController.swift */,
-				918D1CF82635CBF400C6B319 /* SignUpViewController+UI.swift */,
 				918D1CFC2635D57E00C6B319 /* SignInViewController.swift */,
 				918D1CFF2635D6B900C6B319 /* SignInViewController+UI.swift */,
 				918D1D022635DC6500C6B319 /* ForgotPasswordViewController.swift */,
 				918D1D052635DCB400C6B319 /* ForgotPasswordViewController+UI.swift */,
+				918D1CF82635CBF400C6B319 /* SignUpViewController+UI.swift */,
 				918D1D3F26360D8300C6B319 /* Api.swift */,
 				918D1D4226360DC200C6B319 /* UserApi.swift */,
 				91471BAB2639018400392896 /* Ref.swift */,
@@ -129,6 +131,7 @@
 				91DA2BDE26406AD40052F21D /* MyProfileViewController+UI.swift */,
 				91DD384826446FAC00FE6A9E /* HomeViewController.swift */,
 				91DD384B2644702200FE6A9E /* HomeViewController+UI.swift */,
+				244BF6DE26607B200037AE1A /* Config.swift */,
 			);
 			path = GymMate;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				918D1CF32635BB8300C6B319 /* ViewController+UI.swift in Sources */,
 				918D1D4326360DC200C6B319 /* UserApi.swift in Sources */,
 				9C73B5BA264D66C300459956 /* CameraViewController.swift in Sources */,
+				244BF6DF26607B200037AE1A /* Config.swift in Sources */,
 				917DD91426291AC2006E4B03 /* SceneDelegate.swift in Sources */,
 				918D1CF62635C98B00C6B319 /* SignUpViewController.swift in Sources */,
 			);
