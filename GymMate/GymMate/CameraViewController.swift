@@ -59,7 +59,9 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBAction func onSubmit(_ sender: Any) {
         view.endEditing(true)
+        
         ProgressHUD.show("Waiting...", interaction: false)
+        
         guard (Auth.auth().currentUser?.uid) != nil else { return }
         if let profileImg = self.selectedImage, let imageData = profileImg.jpegData(compressionQuality: 0.1) {
             let metaData = StorageMetadata()
@@ -105,8 +107,15 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     func sendDataToDatabase(photoUrl: String) {
         let postsReference = self.ref.child("posts")
         let newPostId = postsReference.childByAutoId().key!
+        let user = Auth.auth().currentUser
         let newPostReference = postsReference.child(newPostId)
-        newPostReference.setValue(["photoUrl": photoUrl, "caption": captionTextView.text!,"zipcode": zipcode.text!], withCompletionBlock: {
+        var profileImageUrlString = ""
+        
+        let profileImageUrlRef = Ref().storageSpecificProfile(uid: user?.uid ?? "none")
+        profileImageUrlRef.downloadURL { URL, Error in
+            profileImageUrlString = URL?.absoluteString ?? "none"
+        }
+        newPostReference.setValue(["photoUrl": photoUrl, "caption": captionTextView.text!,"zipcode": zipcode.text!,"username": user?.displayName ?? "Anonymous", "uid": user?.uid, "profileImageUrl": profileImageUrlString], withCompletionBlock: {
             (error, ref) in
             if error != nil {
                 ProgressHUD.showError(error!.localizedDescription)
@@ -120,7 +129,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     func clean() {
         self.captionTextView.text = ""
-//        self.photo.image = UIImage(named: "placeholder-photo")
+        self.photo.image = UIImage(named: "camera")
         self.selectedImage = nil
     }
     
@@ -131,15 +140,5 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
            
            dismiss(animated: true, completion: nil)
        }
-    
-//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-//        print("did Finish Picking Media")
-//        if let image = info["UIImagePickerControllerOriginalImage"] as? UIImage{
-//            selectedImage = image
-//            photo.image = image
-//        }
-//        dismiss(animated: true, completion: nil)
-//    }
-    
 }
 
